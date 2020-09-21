@@ -63,3 +63,4 @@ This boilerplate uses the [Ducks](https://github.com/erikras/ducks-modular-redux
 
 ### Redux DevTools
 To use de Redux DevTools install the [Redux DevTools extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) from the chrome webstore.
+
