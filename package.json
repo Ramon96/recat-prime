@@ -2,10 +2,10 @@
   "name": "react-prime",
   "version": "6.1.0",
   "description": "A starter kit to create comprehensive React apps with Redux",
-  "author": "chazzaoui",
+  "author": "Ramon96",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chazzaoui/react-prime.git"
+    "url": "https://github.com/Ramon96/recat-prime"
   },
   "license": "MIT",
   "scripts": {
