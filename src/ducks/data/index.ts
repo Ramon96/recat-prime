@@ -22,14 +22,15 @@ const initialState: DataState = {
   loading: false,
 };
 
-export const getFacts: any = () => {
+export const getFacts: any = (cats: boolean = true) => {
+  const endpoint: any = cats ? 'https://aws.random.cat/meow' : 'https://random.dog/woof.json';
   return (dispatch: any) => {
     dispatch(dataActions.load());
     try {
-      fetch('https://catfact.ninja/fact')
-        .then((response) => response.json())
+      fetch(endpoint)
+      .then((response) => response.json())
         .then((data) => {
-          dispatch(dataActions.success(data.fact))
+          cats ? dispatch(dataActions.success(data.file)) : dispatch(dataActions.success(data.url))
         });
     } catch (err) {
       console.log(err);
